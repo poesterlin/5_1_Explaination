@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+div {
+    flex: 1 1 100%;
+    padding-left: 5em;
+}
