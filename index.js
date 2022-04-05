@@ -19,6 +19,10 @@ function setup() {
     rectMode(CENTER);
     textAlign(CENTER);
 
+    document.getElementById("prev").onclick = () => keyReleased({ key: "ArrowLeft"})
+    document.getElementById("next").onclick = () => keyReleased({ key: "ArrowRight"})
+    document.getElementById("simulate").onclick = () => keyReleased({ key: " "})
+
     players.push(new Player(1, 0, "S", "chartreuse", true));
     players.push(new Player(2, 1, "A1", "cornflowerblue"));
     players.push(new Player(3, 2, "M2", "orangered"));
@@ -124,14 +128,15 @@ function mouseReleased() {
     highlight = -1;
 }
 
-function mouseDragged(e) {
+function touchMoved(e) {
+    console.log(e)
     if (highlight === -1) {
-        highlight = players.findIndex(p => p.clicked([e.x, e.y]));
+        highlight = players.findIndex(p => p.clicked([mouseX, mouseY]));
         if (highlight < 0) {
             return;
         }
     }
-    players[highlight].coords = [e.x, e.y];
+    players[highlight].coords = [mouseX, mouseY];
 }
 
 

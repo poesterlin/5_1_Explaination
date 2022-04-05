@@ -12,3 +12,17 @@ div {
     flex: 1 1 100%;
     padding-left: 5em;
 }
+
+button {
+    background: rgb(34, 34, 34);
+    border: none;
+    border-bottom: 2px solid white;
+    border-left: 1px solid white;
+    color: white;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    box-shadow: 1px -1px 0px turquoise;
+}
