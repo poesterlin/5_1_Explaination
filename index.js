@@ -128,13 +128,13 @@ function mouseReleased() {
 }
 
 function touchMoved(e) {
-    console.log(e)
     if (highlight === -1) {
         highlight = players.findIndex(p => p.clicked([mouseX, mouseY]));
         if (highlight < 0) {
             return;
         }
     }
+    e.preventDefault();
     players[highlight].coords = [mouseX, mouseY];
 }
 
