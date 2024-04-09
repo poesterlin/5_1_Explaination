@@ -1,28 +1,53 @@
+html, body {
+  /* prevent pull to refresh */
+  overscroll-behavior-y: contain;
+}
+
 body {
-    margin: 0;
-    background: black;
-    color: white;
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 div {
-    flex: 1 1 100%;
-    padding-left: 5em;
+  flex: 1 1 100%;
+  padding-left: 5em;
 }
 
 button {
-    background: rgb(34, 34, 34);
-    border: none;
-    border-bottom: 2px solid white;
-    border-left: 1px solid white;
-    color: white;
-    margin: 5px;
-    margin-top: 10px;
+  background: rgb(34, 34, 34);
+  border: none;
+  border-bottom: 2px solid white;
+  border-left: 1px solid white;
+  color: white;
+  margin: 5px;
+  margin-top: 10px;
+  padding: 10px;
 }
 
 button:hover {
-    box-shadow: 1px -1px 0px turquoise;
+  box-shadow: 1px -1px 0px turquoise;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    flex-direction: column-reverse;
+  }
+
+  button {
+    width: 30%;
+    min-width: max-content;
+  }
+
+  div {
+    padding-left: 1em;
+  }
 }

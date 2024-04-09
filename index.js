@@ -14,8 +14,7 @@ function mod(n, m) {
 }
 
 function setup() {
-    // displayWidth - 50
-    createCanvas(700, displayHeight - 120);
+    createCanvas(Math.min(window.innerWidth - 30, 700), Math.min(window.innerHeight - 120, 700));
     rectMode(CENTER);
     textAlign(CENTER);
 

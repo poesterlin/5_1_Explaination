@@ -1,45 +1,53 @@
-<script src="/p5.js"></script>
-<script src="/Player.js"></script>
-<script src="/index.js"></script>
-<link rel="stylesheet" href="style.css">
-
-<div>
-    <button id="prev">zurück</button>
-    <button id="next">weiter</button>
-    <button id="simulate">Simulation</button>
-    <h1>Regeln</h1>
-    <p>
-    <ul>
-        <li>Annahmeregeln > Positionspräferenz</li>
-        <li>Positionen werden getauscht, nicht geschoben</li>
-    </ul>
-    </p>
-    <h3>Steller (S)</h3>
-    <p>
-    <ul>
-        <li>nimmt nie an</li>
-        <li>Stellt über 2</li>
-    </ul>
-    </p>
-    <h3>Außen (A)</h3>
-    <p>
-    <ul>
-        <li>nimmt immer mit an</li>
-        <li>Angriff über 4</li>
-    </ul>
-    </p>
-    <h3>Mitte (M)</h3>
-    <p>
-    <ul>
-        <li>nimmt hinten mit an</li>
-        <li>Angriffsposition relativ zum Steller</li>
-    </ul>
-    </p>
-    <h3>Diagonal (D)</h3>
-    <p>
-    <ul>
-        <li>nimmt nie an</li>
-        <li>Angriff über 2</li>
-    </ul>
-    </p>
-</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Läufer System</title>
+    <script src="/p5.js"></script>
+    <script src="/Player.js"></script>
+    <script src="/index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <button id="prev">zurück</button>
+      <button id="next">weiter</button>
+      <button id="simulate">Simulation</button>
+      <h1>Regeln</h1>
+      <section>
+        <ul>
+          <li>Annahmeregeln > Positionspräferenz</li>
+          <li>Positionen werden getauscht, nicht geschoben</li>
+        </ul>
+      </section>
+      <h3>Steller (S)</h3>
+      <section>
+        <ul>
+          <li>nimmt nie an</li>
+          <li>Stellt über 2</li>
+        </ul>
+      </section>
+      <h3>Außen (A)</h3>
+      <section>
+        <ul>
+          <li>nimmt immer mit an</li>
+          <li>Angriff über 4</li>
+        </ul>
+      </section>
+      <h3>Mitte (M)</h3>
+      <section>
+        <ul>
+          <li>nimmt hinten mit an</li>
+          <li>Angriffsposition relativ zum Steller</li>
+        </ul>
+      </section>
+      <h3>Diagonal (D)</h3>
+      <section>
+        <ul>
+          <li>nimmt nie an</li>
+          <li>Angriff über 2</li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
